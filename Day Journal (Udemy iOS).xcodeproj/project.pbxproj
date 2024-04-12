@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F0687CDF2BC89D4D000F1B4C /* Day_Journal__Udemy_iOS_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0687CDE2BC89D4D000F1B4C /* Day_Journal__Udemy_iOS_App.swift */; };
-		F0687CE12BC89D4D000F1B4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0687CE02BC89D4D000F1B4C /* ContentView.swift */; };
+		F0687CE12BC89D4D000F1B4C /* JournalEntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0687CE02BC89D4D000F1B4C /* JournalEntriesListView.swift */; };
 		F0687CE32BC89D50000F1B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0687CE22BC89D50000F1B4C /* Assets.xcassets */; };
 		F0687CE62BC89D50000F1B4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0687CE52BC89D50000F1B4C /* Preview Assets.xcassets */; };
+		F0687CED2BC8A53C000F1B4C /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0687CEC2BC8A53C000F1B4C /* JournalEntry.swift */; };
+		F0687CEF2BC8B13E000F1B4C /* JournalEntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0687CEE2BC8B13E000F1B4C /* JournalEntryDetailView.swift */; };
+		F0687CF12BC8B951000F1B4C /* JournalEntryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0687CF02BC8B951000F1B4C /* JournalEntryRowView.swift */; };
+		F0B6D6492BC9A251004BDE3B /* CreateJournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6D6482BC9A251004BDE3B /* CreateJournalEntryView.swift */; };
+		F0B6D64B2BC9B829004BDE3B /* EditJournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6D64A2BC9B829004BDE3B /* EditJournalEntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F0687CDB2BC89D4D000F1B4C /* Day Journal (Udemy iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day Journal (Udemy iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0687CDE2BC89D4D000F1B4C /* Day_Journal__Udemy_iOS_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day_Journal__Udemy_iOS_App.swift; sourceTree = "<group>"; };
-		F0687CE02BC89D4D000F1B4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0687CE02BC89D4D000F1B4C /* JournalEntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntriesListView.swift; sourceTree = "<group>"; };
 		F0687CE22BC89D50000F1B4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0687CE52BC89D50000F1B4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0687CEC2BC8A53C000F1B4C /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		F0687CEE2BC8B13E000F1B4C /* JournalEntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryDetailView.swift; sourceTree = "<group>"; };
+		F0687CF02BC8B951000F1B4C /* JournalEntryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryRowView.swift; sourceTree = "<group>"; };
+		F0B6D6482BC9A251004BDE3B /* CreateJournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJournalEntryView.swift; sourceTree = "<group>"; };
+		F0B6D64A2BC9B829004BDE3B /* EditJournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditJournalEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				F0687CDE2BC89D4D000F1B4C /* Day_Journal__Udemy_iOS_App.swift */,
-				F0687CE02BC89D4D000F1B4C /* ContentView.swift */,
+				F0687CE02BC89D4D000F1B4C /* JournalEntriesListView.swift */,
+				F0687CF02BC8B951000F1B4C /* JournalEntryRowView.swift */,
+				F0687CEE2BC8B13E000F1B4C /* JournalEntryDetailView.swift */,
+				F0B6D6482BC9A251004BDE3B /* CreateJournalEntryView.swift */,
+				F0B6D64A2BC9B829004BDE3B /* EditJournalEntryView.swift */,
+				F0687CEC2BC8A53C000F1B4C /* JournalEntry.swift */,
 				F0687CE22BC89D50000F1B4C /* Assets.xcassets */,
 				F0687CE42BC89D50000F1B4C /* Preview Content */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0687CE12BC89D4D000F1B4C /* ContentView.swift in Sources */,
+				F0B6D64B2BC9B829004BDE3B /* EditJournalEntryView.swift in Sources */,
+				F0687CF12BC8B951000F1B4C /* JournalEntryRowView.swift in Sources */,
+				F0687CED2BC8A53C000F1B4C /* JournalEntry.swift in Sources */,
+				F0687CE12BC89D4D000F1B4C /* JournalEntriesListView.swift in Sources */,
+				F0687CEF2BC8B13E000F1B4C /* JournalEntryDetailView.swift in Sources */,
 				F0687CDF2BC89D4D000F1B4C /* Day_Journal__Udemy_iOS_App.swift in Sources */,
+				F0B6D6492BC9A251004BDE3B /* CreateJournalEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

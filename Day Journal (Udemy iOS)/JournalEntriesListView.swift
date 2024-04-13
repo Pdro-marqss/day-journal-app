@@ -14,10 +14,11 @@ struct JournalEntriesListView: View {
     @Query(sort: \JournalEntry.date, order: .reverse) private var journalEntries: [JournalEntry]
     
     @State var showCreateView: Bool = false
+    @State private var searchText: String = ""
     
     var body: some View {
         NavigationStack {
-            List(journalEntries) { listedJournalEntry in
+            List(searchResults) { listedJournalEntry in
                 NavigationLink(destination: EditJournalEntryView(editingJournalEntry: listedJournalEntry)) {
                     JournalEntryRowView(rowJournalEntry: listedJournalEntry)
                 }
@@ -34,6 +35,15 @@ struct JournalEntriesListView: View {
             .sheet(isPresented: $showCreateView) {
                 CreateJournalEntryView()
             }
+        }
+        .searchable(text: $searchText)
+    }
+    
+    var searchResults: [JournalEntry] {
+        if searchText.isEmpty {
+            return journalEntries
+        } else {
+            return journalEntries.filter { $0.title.lowercased().contains(searchText.lowercased()) || $0.text.lowercased().contains(searchText.lowercased())}
         }
     }
 }
